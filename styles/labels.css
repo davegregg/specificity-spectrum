@@ -1,0 +1,9 @@
+main .labels {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    pointer-events: none;
+    font-size: 1rem;
+    z-index: var(--meter-labels-z-index);
+}

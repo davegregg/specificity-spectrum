@@ -1,0 +1,41 @@
+meter {
+    width: var(--meter-width);
+    height: var(--meter-height);
+    z-index: var(--meter-output-z-index);
+    background: var(--background);
+    width: 100%;
+    border: 0;
+    margin-bottom: 0.5rem;
+}
+
+meter::-webkit-meter-bar {
+    border: 0;
+    border-radius: 0.25rem;
+    background: var(--background);
+    height: var(--meter-height);
+}
+
+meter::-moz-meter-bar {
+    border: 0;
+    border-bottom: var(--meter-border-thickness) solid var(--border);
+    border-radius: 0.25rem;
+    height: var(--meter-height);
+}
+
+meter:-moz-meter-optimum::-moz-meter-bar { background: var(--optimum); }
+meter::-webkit-meter-optimum-value {
+    background: var(--optimum); 
+    border-bottom: var(--meter-border-thickness) solid var(--border);
+}
+
+meter:-moz-meter-sub-optimum::-moz-meter-bar { background: var(--sub-optimum); }
+meter::-webkit-meter-suboptimum-value {
+    background: var(--sub-optimum);
+    border-bottom: var(--meter-border-thickness) solid var(--border);
+}
+
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar { background: var(--sub-sub-optimum); }
+meter::-webkit-meter-even-less-good-value {
+    background: var(--sub-sub-optimum);
+    border-bottom: var(--meter-border-thickness) solid var(--border);
+}

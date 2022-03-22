@@ -1,0 +1,48 @@
+:root {
+    font-family: 
+        'Input Mono', 
+        'Menlo', 
+        'Monaco', 
+        'Inconsolata', 
+        'Fira Mono', 
+        'Source Code Pro', 
+        'Hack', 
+        'DejaVu Sans Mono', 
+        'Droid Sans Mono', 
+        'Ubuntu Mono', 
+        'Courier New', 
+        'Courier', 
+        monospace;
+}
+
+main {
+    --meter-width: 25rem;
+    --meter-height: 2rem;
+    --meter-border-thickness: 0.5rem;
+
+    --meter-output-z-index: 10;
+    --meter-ticks-z-index: 20;
+    --meter-input-z-index: 30;
+    --meter-labels-z-index: 40;
+
+    --background: rgba(211, 211, 211, 0.224);
+    --border: #8194ff;
+    --optimum: rgb(103, 230, 255);
+    --sub-optimum: rgb(122, 255, 213);
+    --sub-sub-optimum: rgb(253, 162, 255);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    height: 75vh;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}

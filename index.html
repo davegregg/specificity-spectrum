@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity Spectrum</title>
+
+    <link rel="stylesheet" href="./styles/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/labels.css">
+    <link rel="stylesheet" href="./styles/ticks.css">
+    <link rel="stylesheet" href="./styles/meter-output.css">
+    <link rel="stylesheet" href="./styles/meter-input.css">
+
+    <script defer src="./scripts/view.js"></script>
+    <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+    <main>
+        <div>
+            <section class="labels">
+                <div>Least Specific</div>
+                <div>Most Specific</div>
+            </section>
+
+            <meter
+                id="meterOutput"
+                value="50"
+                min="0" low="40"
+                optimum="70"
+                high="60" max="100">
+            </meter>
+
+            <input 
+                id="meterInput"
+                type="range"
+                value="50"
+                step="1"
+                min="00"
+                max="100"
+                autofocus
+                list="tickmarks">
+
+            <section class="ticks">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

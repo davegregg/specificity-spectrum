@@ -1,0 +1,16 @@
+.ticks {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    pointer-events: none;
+    z-index: var(--meter-ticks-z-index);
+}
+
+.ticks > div {
+    background: white;
+    width: 0.2rem;
+    height: calc(var(--meter-height) * 2);
+    pointer-events: none;
+}

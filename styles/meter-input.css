@@ -1,0 +1,41 @@
+#meterInput {
+    width: var(--meter-width);
+    z-index: var(--meter-input-z-index);
+    margin-top: -0.5rem;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    height: 0rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -2rem; /* centers thumb on the track */
+    background-color: black;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 0.5rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #00000030;
+    outline-offset: 0.125rem;
+}
