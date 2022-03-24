@@ -25,7 +25,7 @@ main {
     --meter-input-z-index: 30;
     --meter-labels-z-index: 40;
 
-    --background: rgba(211, 211, 211, 0.224);
+    --background: rgb(203, 203, 203);
     --border: #8194ff;
     --optimum: rgb(103, 230, 255);
     --sub-optimum: rgb(122, 255, 213);
